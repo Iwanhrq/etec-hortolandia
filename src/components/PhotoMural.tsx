@@ -33,7 +33,11 @@ const PhotoMural: React.FC<PhotoMuralProps> = ({ photos }) => {
             <img
               src={photo.image}
               alt={`Foto ${idx + 1}`}
-              className="w-full h-full object-cover"
+              className={
+                idx === 2
+                  ? 'object-cover object-center max-w-full max-h-full mx-auto my-auto -translate-y-16'
+                  : 'w-full h-full object-cover object-center'
+              }
             />
           </div>
         ))}
@@ -49,7 +53,7 @@ const PhotoMural: React.FC<PhotoMuralProps> = ({ photos }) => {
             <img
               src={photo.image}
               alt={`Foto ${idx + 1}`}
-              className="object-cover w-full h-64"
+              className="object-cover object-center w-full h-64"
             />
           </div>
         ))}
