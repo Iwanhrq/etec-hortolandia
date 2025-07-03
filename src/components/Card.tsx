@@ -7,9 +7,13 @@ interface CardProps {
 }
 
 const getSectionId = (title: string) => {
-  if (title.toLowerCase().includes('sistema')) return 'ds';
-  if (title.toLowerCase().includes('admin')) return 'adm';
-  if (title.toLowerCase().includes('nutri')) return 'nutri';
+  const t = title.toLowerCase();
+  if (t.includes('festival')) return 'festival';
+  if (t.includes('nutritec')) return 'nutritec';
+  if (t.includes('portas abertas') || t.includes('epa')) return 'epa';
+  if (t.includes('sistema')) return 'ds';
+  if (t.includes('admin')) return 'adm';
+  if (t.includes('nutri')) return 'nutri';
   return '';
 };
 
@@ -112,9 +116,9 @@ const Card: React.FC<CardProps> = ({ image, title }) => {
           ref={btnRef}
           style={{ opacity: 0, transform: 'translateY(40px)' }}
           className="bg-white text-black px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition cursor-pointer"
-          onClick={() => scrollToSection(sectionId)}
+          onClick={() => sectionId && scrollToSection(sectionId)}
         >
-          Ir para o curso
+          Saiba mais
         </button>
       </div>
     </div>

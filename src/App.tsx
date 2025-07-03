@@ -11,7 +11,11 @@ import adm1img from './assets/imgadm1.png';
 import adm2Img from './assets/imgadm2.png';
 import nutri1img from './assets/imgnutri1.png';
 import nutri2Img from './assets/imgnutri2.png';
+import festivalimg from './assets/imgfestival.png'
+import nutritecimg from './assets/imgnutritec.png'
+import epaimg from './assets/imgepa.png'
 import { useAnimeOnView } from './hooks/useAnimeOnView';
+import PhotoMural from './components/PhotoMural';
 
 function App() {
   // Hooks para animar textos e imagens das seções (incluindo texto da home)
@@ -45,6 +49,7 @@ function App() {
   const admImg2Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
   const nutriImg1Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
   const nutriImg2Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
+  const nutritecTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
 
   return (
     <div>
@@ -74,9 +79,9 @@ function App() {
         <div className="relative z-10 w-full flex flex-col items-center justify-center">
           <h2 ref={cursosTextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">CURSOS</h2>
           <div ref={cursosGridRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 w-full max-w-7xl justify-items-center items-center">
-            <Card image={dsImg} title="Desenvolvimento de Sistemas" />
-            <Card image={admImg} title="Administração" />
-            <Card image={nutriImg} title="Nutrição e Dietética" />
+            <Card image={dsImg} title="DESENVOLVIMENTO DE SISTEMAS" />
+            <Card image={admImg} title="ADMINISTRAÇÃO" />
+            <Card image={nutriImg} title="NUTRIÇÃO E DIETÉTICA" />
           </div>
         </div>
       </section>
@@ -87,17 +92,17 @@ function App() {
         <div ref={dsGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           {/* Imagens collage vertical */}
           <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem]">
-            <img 
+            <img
               ref={dsImg1Ref}
-              src={ds1img} 
-              alt="DS 1" 
-              className="hidden md:block w-60 h-72 md:w-80 md:h-[30rem] object-cover shadow-lg absolute left-1/2 top-0 transform -translate-x-1/2 z-10 md:left-0 md:top-0 md:translate-x-0 md:z-10 img-anim" 
+              src={ds1img}
+              alt="DS 1"
+              className="hidden md:block w-60 h-72 md:w-80 md:h-[30rem] object-cover shadow-lg absolute left-1/2 top-0 transform -translate-x-1/2 z-10 md:left-0 md:top-0 md:translate-x-0 md:z-10 img-anim"
             />
-            <img 
+            <img
               ref={dsImg2Ref}
-              src={ds2Img} 
-              alt="DS 2" 
-              className="w-72 h-100 md:w-80 md:h-[30rem] object-cover shadow-lg mx-auto block md:absolute md:left-56 md:top-20 md:translate-x-0 md:z-10 img-anim" 
+              src={ds2Img}
+              alt="DS 2"
+              className="w-72 h-100 md:w-80 md:h-[30rem] object-cover shadow-lg mx-auto block md:absolute md:left-56 md:top-20 md:translate-x-0 md:z-10 img-anim"
             />
           </div>
           {/* Textos */}
@@ -128,17 +133,17 @@ function App() {
         <div ref={admGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           {/* Imagens collage vertical */}
           <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem] md:order-1">
-            <img 
+            <img
               ref={admImg1Ref}
-              src={adm1img} 
-              alt="ADM 1" 
-              className="hidden md:block w-60 h-72 md:w-80 md:h-[30rem] object-cover shadow-lg absolute left-1/2 top-0 transform -translate-x-1/2 z-10 md:left-0 md:top-0 md:translate-x-0 md:z-10 img-anim" 
+              src={adm1img}
+              alt="ADM 1"
+              className="hidden md:block w-60 h-72 md:w-80 md:h-[30rem] object-cover shadow-lg absolute left-1/2 top-0 transform -translate-x-1/2 z-10 md:left-0 md:top-0 md:translate-x-0 md:z-10 img-anim"
             />
-            <img 
+            <img
               ref={admImg2Ref}
-              src={adm2Img} 
-              alt="ADM 2" 
-              className="w-72 h-100 md:w-80 md:h-[30rem] object-cover shadow-lg mx-auto block md:absolute md:left-56 md:top-20 md:translate-x-0 md:z-10 img-anim" 
+              src={adm2Img}
+              alt="ADM 2"
+              className="w-72 h-100 md:w-80 md:h-[30rem] object-cover shadow-lg mx-auto block md:absolute md:left-56 md:top-20 md:translate-x-0 md:z-10 img-anim"
             />
           </div>
           {/* Textos */}
@@ -169,20 +174,19 @@ function App() {
         <div ref={nutriGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           {/* Imagens collage vertical */}
           <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem] md:order-1">
-            <img 
+            <img
               ref={nutriImg1Ref}
-              src={nutri1img} 
-              alt="Nutrição 1" 
-              className="hidden md:block w-60 h-72 md:w-80 md:h-[30rem] object-cover shadow-lg absolute left-1/2 top-0 transform -translate-x-1/2 z-10 md:left-0 md:top-0 md:translate-x-0 md:z-10 img-anim" 
+              src={nutri1img}
+              alt="Nutrição 1"
+              className="hidden md:block w-60 h-72 md:w-80 md:h-[30rem] object-cover shadow-lg absolute left-1/2 top-0 transform -translate-x-1/2 z-10 md:left-0 md:top-0 md:translate-x-0 md:z-10 img-anim"
             />
-            <img 
+            <img
               ref={nutriImg2Ref}
-              src={nutri2Img} 
-              alt="Nutrição 2" 
-              className="w-72 h-100 md:w-80 md:h-[30rem] object-cover shadow-lg mx-auto block md:absolute md:left-56 md:top-20 md:translate-x-0 md:z-10 img-anim" 
+              src={nutri2Img}
+              alt="Nutrição 2"
+              className="w-72 h-100 md:w-80 md:h-[30rem] object-cover shadow-lg mx-auto block md:absolute md:left-56 md:top-20 md:translate-x-0 md:z-10 img-anim"
             />
           </div>
-          {/* Textos */}
           <div className="flex flex-col w-full md:w-1/2 gap-8 items-center md:items-start md:order-2">
             <div>
               <p ref={nutriPRef} className="text-lg md:text-xl text-white/80 text-center md:text-left">
@@ -204,27 +208,77 @@ function App() {
           </div>
         </div>
       </section>
-      {/* Section Eventos (igual a de Cursos) */}
+
+
       <section className="section-anim relative bg-[#010512] text-white py-25 px-4 overflow-hidden min-h-[100vh] flex flex-col items-center justify-center">
         <div className="relative z-10 w-full flex flex-col items-center justify-center">
           <h2 ref={eventosTextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">EVENTOS</h2>
           <div ref={eventosGridRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 w-full max-w-7xl justify-items-center items-center">
-            <Card image={dsImg} title="Evento 1" />
-            <Card image={admImg} title="Evento 2" />
-            <Card image={nutriImg} title="Evento 3" />
+            <Card image={festivalimg} title="FESTIVAL DE DANÇA" />
+            <Card image={nutritecimg} title="NUTRITEC" />
+            <Card image={epaimg} title="ETEC DE PORTAS ABERTAS" />
           </div>
         </div>
       </section>
+
       {/* Nova Section 1 */}
-      <section className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
-        <h2 ref={novo1TextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">NOVO CURSO 1</h2>
-        {/* Conteúdo adicional pode ser adicionado aqui */}
+      <section id="festival" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden min-h-screen flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center w-full max-w-6xl mx-auto text-center gap-8">
+          <h2
+            ref={novo1TextRef}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light"
+          >
+            FESTIVAL DE DANÇA
+          </h2>
+          <div className="overflow-hidden max-h-[550px] w-full">
+            <PhotoMural
+              photos={[
+                { image: dsImg },
+                { image: admImg },
+                { image: nutriImg },
+                { image: ds1img },
+                { image: ds2Img },
+              ]}
+            />
+          </div>
+        </div>
       </section>
+
       {/* Nova Section 2 */}
-      <section className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
-        <h2 ref={novo2TextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">NOVO CURSO 2</h2>
-        {/* Conteúdo adicional pode ser adicionado aqui */}
+      <section id="nutritec" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden min-h-screen flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center w-full max-w-6xl mx-auto text-center gap-8">
+          <h2
+            ref={novo2TextRef}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light"
+          >
+            NUTRITEC
+          </h2>
+          <div className="overflow-hidden max-h-[550px] w-full">
+            <PhotoMural
+              photos={[
+                { image: dsImg },
+                { image: admImg },
+                { image: nutriImg },
+                { image: ds1img },
+                { image: ds2Img },
+              ]}
+            />
+          </div>
+        </div>
       </section>
+
+      {/* Nova Section 3 */}
+      <section id="epa" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden min-h-screen flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center w-full max-w-6xl mx-auto text-center gap-8">
+          <h2
+            ref={nutritecTextRef}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light"
+          >
+            ETEC DE PORTAS ABERTAS
+          </h2>
+        </div>
+      </section>
+
     </div>
   )
 }
