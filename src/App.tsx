@@ -15,13 +15,30 @@ import { useAnimeOnView } from './hooks/useAnimeOnView';
 
 function App() {
   // Hooks para animar textos e imagens das seções (incluindo texto da home)
-  const homeTitleRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 1500, easing: 'out(3)' }, once: true });
-  const homeLineRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], scaleX: [0.7, 1], duration: 1500, easing: 'out(3)' }, once: true });
-  const homePRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 1500, easing: 'out(3)' }, once: true });
-  const cursosTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 1500, easing: 'out(3)' }, once: true });
-  const dsTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 1500, easing: 'out(3)' }, once: true });
-  const admTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 1500, easing: 'out(3)' }, once: true });
-  const nutriTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 1500, easing: 'out(3)' }, once: true });
+  const homeTitleRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const homeLineRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], scaleX: [0.7, 1], duration: 3000, easing: 'out(3)' }, once: true });
+  const homePRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const cursosTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const cursosGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const dsTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const dsGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const dsPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const dsH3Ref = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const dsUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const admTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const admGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const admPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const admH3Ref = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const admUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const nutriTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const nutriGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const nutriPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const nutriH3Ref = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const nutriUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const eventosTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const eventosGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const novo1TextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const novo2TextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const dsImg1Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
   const dsImg2Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
   const admImg1Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
@@ -56,7 +73,7 @@ function App() {
       <section className="section-anim relative bg-[#010512] text-white py-25 px-4 overflow-hidden min-h-[100vh] flex flex-col items-center justify-center">
         <div className="relative z-10 w-full flex flex-col items-center justify-center">
           <h2 ref={cursosTextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">CURSOS</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 w-full max-w-7xl justify-items-center items-center">
+          <div ref={cursosGridRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 w-full max-w-7xl justify-items-center items-center">
             <Card image={dsImg} title="Desenvolvimento de Sistemas" />
             <Card image={admImg} title="Administração" />
             <Card image={nutriImg} title="Nutrição e Dietética" />
@@ -67,7 +84,7 @@ function App() {
       {/* Seção DS */}
       <section id="ds" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
         <h2 ref={dsTextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">DESENVOLVIMENTO DE SISTEMAS</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
+        <div ref={dsGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           {/* Imagens collage vertical */}
           <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem]">
             <img 
@@ -86,13 +103,13 @@ function App() {
           {/* Textos */}
           <div className="flex flex-col w-full md:w-1/2 gap-8 items-center md:items-start">
             <div>
-              <p className="text-lg md:text-xl text-white/80 text-center md:text-left">
+              <p ref={dsPRef} className="text-lg md:text-xl text-white/80 text-center md:text-left">
                 O curso de Desenvolvimento de Sistemas prepara os alunos para o universo da tecnologia, ensinando desde os fundamentos da programação até a criação de sistemas completos. É ideal para quem gosta de resolver problemas com lógica e inovação.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender</h3>
-              <ul className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
+              <h3 ref={dsH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender</h3>
+              <ul ref={dsUlRef} className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
                 <li className="md:text-lg">Lógica de programação e algoritmos</li>
                 <li className="md:text-lg">Linguagens como HTML, CSS, JavaScript e C#</li>
                 <li className="md:text-lg">Desenvolvimento de sites, aplicativos e sistemas</li>
@@ -108,7 +125,7 @@ function App() {
       {/* Seção ADM */}
       <section id="adm" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
         <h2 ref={admTextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">ADMINISTRAÇÃO</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
+        <div ref={admGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           {/* Imagens collage vertical */}
           <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem] md:order-1">
             <img 
@@ -127,13 +144,13 @@ function App() {
           {/* Textos */}
           <div className="flex flex-col w-full md:w-1/2 gap-8 items-center md:items-start md:order-2">
             <div>
-              <p className="text-lg md:text-xl text-white/80 text-center md:text-left">
+              <p ref={admPRef} className="text-lg md:text-xl text-white/80 text-center md:text-left">
                 O curso de Administração oferece uma formação sólida para quem deseja atuar no mundo dos negócios, liderar projetos e entender como funciona o dia a dia das empresas. É uma base essencial para futuros empreendedores e gestores.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender</h3>
-              <ul className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
+              <h3 ref={admH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender</h3>
+              <ul ref={admUlRef} className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
                 <li className="md:text-lg">Fundamentos da gestão e organização empresarial</li>
                 <li className="md:text-lg">Planejamento estratégico e processos administrativos</li>
                 <li className="md:text-lg">Marketing, vendas e relacionamento com o cliente</li>
@@ -149,7 +166,7 @@ function App() {
       {/* Seção Nutrição */}
       <section id="nutri" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
         <h2 ref={nutriTextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">NUTRIÇÃO E DIETÉTICA</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
+        <div ref={nutriGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           {/* Imagens collage vertical */}
           <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem] md:order-1">
             <img 
@@ -168,13 +185,13 @@ function App() {
           {/* Textos */}
           <div className="flex flex-col w-full md:w-1/2 gap-8 items-center md:items-start md:order-2">
             <div>
-              <p className="text-lg md:text-xl text-white/80 text-center md:text-left">
+              <p ref={nutriPRef} className="text-lg md:text-xl text-white/80 text-center md:text-left">
                 O curso de Nutrição e Dietética prepara os alunos para atuar no setor de alimentação e saúde, com foco na promoção de hábitos alimentares saudáveis e no controle da qualidade dos alimentos. É ideal para quem gosta de cuidar das pessoas por meio da alimentação, com responsabilidade, ética e conhecimento técnico.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender</h3>
-              <ul className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
+              <h3 ref={nutriH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender</h3>
+              <ul ref={nutriUlRef} className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
                 <li className="md:text-lg">Fundamentos da nutrição e alimentação saudável</li>
                 <li className="md:text-lg">Técnicas de preparo e conservação de alimentos</li>
                 <li className="md:text-lg">Planejamento de cardápios balanceados</li>
@@ -190,8 +207,8 @@ function App() {
       {/* Section Eventos (igual a de Cursos) */}
       <section className="section-anim relative bg-[#010512] text-white py-25 px-4 overflow-hidden min-h-[100vh] flex flex-col items-center justify-center">
         <div className="relative z-10 w-full flex flex-col items-center justify-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">EVENTOS</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 w-full max-w-7xl justify-items-center items-center">
+          <h2 ref={eventosTextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">EVENTOS</h2>
+          <div ref={eventosGridRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 w-full max-w-7xl justify-items-center items-center">
             <Card image={dsImg} title="Evento 1" />
             <Card image={admImg} title="Evento 2" />
             <Card image={nutriImg} title="Evento 3" />
@@ -200,12 +217,12 @@ function App() {
       </section>
       {/* Nova Section 1 */}
       <section className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">NOVO CURSO 1</h2>
+        <h2 ref={novo1TextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">NOVO CURSO 1</h2>
         {/* Conteúdo adicional pode ser adicionado aqui */}
       </section>
       {/* Nova Section 2 */}
       <section className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">NOVO CURSO 2</h2>
+        <h2 ref={novo2TextRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-center mb-12">NOVO CURSO 2</h2>
         {/* Conteúdo adicional pode ser adicionado aqui */}
       </section>
     </div>
