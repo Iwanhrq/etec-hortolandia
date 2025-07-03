@@ -15,26 +15,26 @@ import { useAnimeOnView } from './hooks/useAnimeOnView';
 
 function App() {
   // Hooks para animar textos e imagens das seções (incluindo texto da home)
-  const homeTitleRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const homeLineRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], scaleX: [0.7, 1], duration: 3000, easing: 'out(3)' }, once: true });
-  const homePRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const homeTitleRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)' }, once: true });
+  const homeLineRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], scaleX: [0.7, 1], duration: 1800, easing: 'out(3)' }, once: true });
+  const homePRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)' }, once: true });
   const cursosTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const cursosGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const dsTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const dsGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const dsPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const dsH3Ref = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const dsUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const dsPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
+  const dsH3Ref = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
+  const dsUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
   const admTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const admGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const admPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const admH3Ref = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const admUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const admPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
+  const admH3Ref = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
+  const admUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
   const nutriTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const nutriGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const nutriPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const nutriH3Ref = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
-  const nutriUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [20, 0], duration: 3000, easing: 'out(3)' }, once: true });
+  const nutriPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
+  const nutriH3Ref = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
+  const nutriUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
   const eventosTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const eventosGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const novo1TextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });

@@ -36,8 +36,8 @@ function useCardAnimeOnView<T extends HTMLElement>() {
           scope.current = createScope({ root: ref }).add(() => {
             animate(el, {
               opacity: [0, 1],
-              translateY: [40, 0],
-              duration: 3000,
+              translateY: [24, 0],
+              duration: 1800,
               easing: 'out(3)',
             });
           });
@@ -71,14 +71,14 @@ const Card: React.FC<CardProps> = ({ image, title }) => {
         if (entry.isIntersecting && !hasAnimated) {
           animate(h3Ref.current!, {
             opacity: [0, 1],
-            translateY: [40, 0],
-            duration: 3000,
+            translateY: [24, 0],
+            duration: 1800,
             easing: 'out(3)',
           });
           animate(btnRef.current!, {
             opacity: [0, 1],
-            translateY: [40, 0],
-            duration: 3000,
+            translateY: [24, 0],
+            duration: 1800,
             easing: 'out(3)',
             delay: 300,
           });
