@@ -73,6 +73,8 @@ function App() {
   const epaUlRef = useAnimeOnView<HTMLUListElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
   const epaImg1Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
   const epaImg2Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
+  const festivalMuralRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 2000, easing: 'out(3)' }, once: true });
+  const nutritecMuralRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 2000, easing: 'out(3)' }, once: true });
 
   return (
     <div>
@@ -250,7 +252,7 @@ function App() {
           >
             FESTIVAL DE DANÇA
           </h2>
-          <div className="overflow-hidden max-h-[550px] w-full">
+          <div ref={festivalMuralRef} className="overflow-hidden max-h-[550px] w-full">
             <PhotoMural
               photos={[
                 { image: img1festival },
@@ -273,7 +275,7 @@ function App() {
           >
             NUTRITEC
           </h2>
-          <div className="overflow-hidden max-h-[550px] w-full">
+          <div ref={nutritecMuralRef} className="overflow-hidden max-h-[550px] w-full">
             <PhotoMural
               photos={[
                 { image: img2nutritec },
