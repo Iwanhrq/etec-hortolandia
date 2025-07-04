@@ -8,22 +8,40 @@ interface CardProps {
 
 const getSectionId = (title: string) => {
   const t = title.toLowerCase();
-  if (t.includes('festival')) return 'festival';
-  if (t.includes('nutritec')) return 'nutritec';
-  if (t.includes('portas abertas') || t.includes('epa')) return 'epa';
+  console.log('Título recebido:', title, 'Título em lowercase:', t);
+  if (t.includes('festival')) {
+    console.log('Retornando ID: festival');
+    return 'festival';
+  }
+  if (t.includes('nutritec')) {
+    console.log('Retornando ID: nutritec');
+    return 'nutritec';
+  }
+  if (t.includes('portas abertas') || t.includes('epa')) {
+    console.log('Retornando ID: epa');
+    return 'epa';
+  }
   if (t.includes('sistema')) return 'ds';
   if (t.includes('admin')) return 'adm';
   if (t.includes('nutri')) return 'nutri';
+  console.log('Nenhum ID encontrado para:', title);
   return '';
 };
 
 const scrollToSection = (id: string) => {
+  console.log('Tentando scroll para:', id);
   const el = document.getElementById(id);
   if (el) {
+    console.log('Elemento encontrado, fazendo scroll...');
+    // Usar scrollIntoView com offset para considerar o header fixo
+    const headerHeight = 80; // Altura aproximada do header
+    const elementPosition = el.offsetTop - headerHeight;
     window.scrollTo({
-      top: el.offsetTop - 80,
+      top: elementPosition,
       behavior: 'smooth',
     });
+  } else {
+    console.log('Elemento não encontrado:', id);
   }
 };
 
@@ -116,7 +134,14 @@ const Card: React.FC<CardProps> = ({ image, title }) => {
           ref={btnRef}
           style={{ opacity: 0, transform: 'translateY(40px)' }}
           className="bg-white text-black px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition cursor-pointer"
-          onClick={() => sectionId && scrollToSection(sectionId)}
+          onClick={() => {
+            console.log('Botão clicado, sectionId:', sectionId);
+            if (sectionId) {
+              scrollToSection(sectionId);
+            } else {
+              console.log('SectionId não encontrado para:', title);
+            }
+          }}
         >
           Saiba mais
         </button>

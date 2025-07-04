@@ -69,7 +69,7 @@ const Header = () => {
                 onMouseLeave={handleEventosDropdownLeave}
               >
                 <li><button className="w-full text-left px-4 py-2 hover:bg-gray-100" onClick={() => {scrollToSection('festival'); setEventosDropdownOpen(false);}}>Festival</button></li>
-                <li><button className="w-full text-left px-4 py-2 hover:bg-gray-100" onClick={() => {scrollToSection('interclasse'); setEventosDropdownOpen(false);}}>Interclasse</button></li>
+                <li><button className="w-full text-left px-4 py-2 hover:bg-gray-100" onClick={() => {scrollToSection('nutritec'); setEventosDropdownOpen(false);}}>Nutritec</button></li>
                 <li><button className="w-full text-left px-4 py-2 hover:bg-gray-100" onClick={() => {scrollToSection('epa'); setEventosDropdownOpen(false);}}>EPA</button></li>
               </ul>
             )}
@@ -119,7 +119,7 @@ const Header = () => {
               <span className="font-semibold">Eventos</span>
               <ul className="ml-4 mt-2 flex flex-col gap-2">
                 <li><button className="hover:text-gray-700 transition text-left" onClick={() => {scrollToSection('festival'); setMenuOpen(false);}}>Festival</button></li>
-                <li><button className="hover:text-gray-700 transition text-left" onClick={() => {scrollToSection('interclasse'); setMenuOpen(false);}}>Interclasse</button></li>
+                <li><button className="hover:text-gray-700 transition text-left" onClick={() => {scrollToSection('nutritec'); setMenuOpen(false);}}>Nutritec</button></li>
                 <li><button className="hover:text-gray-700 transition text-left" onClick={() => {scrollToSection('epa'); setMenuOpen(false);}}>EPA</button></li>
               </ul>
             </li>
