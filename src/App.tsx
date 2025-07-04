@@ -65,7 +65,6 @@ function App() {
   const admImg2Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
   const nutriImg1Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
   const nutriImg2Ref = useAnimeOnView<HTMLImageElement>({ animation: { opacity: [0, 1], scale: [0.95, 1], duration: 1500, easing: 'out(3)' }, once: true });
-  const nutritecTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const epaTextRef = useAnimeOnView<HTMLHeadingElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const epaGridRef = useAnimeOnView<HTMLDivElement>({ animation: { opacity: [0, 1], translateY: [40, 0], duration: 3000, easing: 'out(3)' }, once: true });
   const epaPRef = useAnimeOnView<HTMLParagraphElement>({ animation: { opacity: [0, 1], translateY: [24, 0], duration: 1800, easing: 'out(3)', delay: 400 }, once: true });
