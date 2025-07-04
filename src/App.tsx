@@ -79,7 +79,7 @@ function App() {
     <div>
       <Header />
       {/* Section Home */}
-      <section id="top" className="relative bg-[#010512] text-white py-20 px-4 overflow-hidden min-h-[90vh] pb-45 flex flex-col justify-center">
+      <section id="top" className="relative bg-[#010512] text-white py-20 px-2 overflow-hidden min-h-[90vh] pb-45 flex flex-col justify-center">
         {/* Overlay azul escuro */}
         <div className="absolute inset-0 bg-[#010512] opacity-90"></div>
         {/* Imagem de fundo quase transparente */}
@@ -100,7 +100,7 @@ function App() {
       </section>
 
       {/* Section Cursos */}
-      <section className="section-anim relative bg-[#010512] text-white py-25 px-4 overflow-hidden min-h-[100vh] flex flex-col items-center justify-center">
+      <section className="section-anim relative bg-[#010512] text-white py-25 px-2 overflow-hidden min-h-[100vh] flex flex-col items-center justify-center">
         <div className="relative z-10 w-full flex flex-col items-center justify-center">
           <h2 ref={cursosTextRef} className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light text-center mb-12">CURSOS</h2>
           <div ref={cursosGridRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 w-full max-w-7xl justify-items-center items-center">
@@ -112,7 +112,7 @@ function App() {
       </section>
 
       {/* Section DS */}
-      <section id="ds" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
+      <section id="ds" className="section-anim relative bg-[#010512] text-white py-8 px-2 overflow-hidden flex flex-col items-center justify-center min-h-[100vh]">
         <h2 ref={dsTextRef} className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light text-center mb-12">DESENVOLVIMENTO DE SISTEMAS</h2>
         <div ref={dsGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem]">
@@ -151,7 +151,7 @@ function App() {
       </section>
 
       {/* Section Administração */}
-      <section id="adm" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
+      <section id="adm" className="section-anim relative bg-[#010512] text-white py-8 px-2 overflow-hidden flex flex-col items-center justify-center min-h-[100vh]">
         <h2 ref={admTextRef} className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light text-center mb-12">ADMINISTRAÇÃO</h2>
         <div ref={admGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem] md:order-1">
@@ -190,7 +190,7 @@ function App() {
       </section>
 
       {/* Section Nutrição */}
-      <section id="nutri" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
+      <section id="nutri" className="section-anim relative bg-[#010512] text-white py-8 px-2 overflow-hidden flex flex-col items-center justify-center min-h-[100vh]">
         <h2 ref={nutriTextRef} className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light text-center mb-12">NUTRIÇÃO E DIETÉTICA</h2>
         <div ref={nutriGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           {/* Imagens collage vertical */}
@@ -231,7 +231,7 @@ function App() {
       </section>
 
       {/* Section Eventos */}
-      <section className="section-anim relative bg-[#010512] text-white py-25 px-4 overflow-hidden min-h-[100vh] flex flex-col items-center justify-center">
+      <section className="section-anim relative bg-[#010512] text-white py-25 px-2 overflow-hidden min-h-[100vh] flex flex-col items-center justify-center">
         <div className="relative z-10 w-full flex flex-col items-center justify-center">
           <h2 ref={eventosTextRef} className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light text-center mb-12">EVENTOS</h2>
           <div ref={eventosGridRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 w-full max-w-7xl justify-items-center items-center">
@@ -243,7 +243,7 @@ function App() {
       </section>
 
       {/* Section Festival */}
-      <section id="festival" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden min-h-screen flex flex-col items-center justify-center">
+      <section id="festival" className="section-anim relative bg-[#010512] text-white py-8 px-2 overflow-hidden min-h-[100vh] flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center w-full max-w-6xl mx-auto text-center gap-8">
           <h2
             ref={novo1TextRef}
@@ -266,7 +266,7 @@ function App() {
       </section>
 
       {/* Section Nutritec */}
-      <section id="nutritec" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden min-h-screen flex flex-col items-center justify-center">
+      <section id="nutritec" className="section-anim relative bg-[#010512] text-white py-8 px-2 overflow-hidden min-h-[100vh] flex flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center w-full max-w-6xl mx-auto text-center gap-8">
           <h2
             ref={novo2TextRef}
@@ -289,7 +289,7 @@ function App() {
       </section>
 
       {/* Section EPA */}
-      <section id="epa" className="section-anim relative bg-[#010512] text-white py-8 px-4 overflow-hidden flex flex-col items-center justify-center min-h-[105vh]">
+      <section id="epa" className="section-anim relative bg-[#010512] text-white py-8 px-2 overflow-hidden flex flex-col items-center justify-center min-h-[100vh]">
         <h2 ref={epaTextRef} className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light text-center mb-12">ETEC DE PORTAS ABERTAS</h2>
         <div ref={epaGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
           <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem]">
