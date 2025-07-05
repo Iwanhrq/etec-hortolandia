@@ -5,17 +5,19 @@ Este projeto é um site desenvolvido com o objetivo de apresentar informações 
 
 ---
 
-
 ## 🛠️ Tecnologias Utilizadas
 
-- **React** – Framework JavaScript para construção da interface
-- **TypeScript** – Superset do JavaScript com tipagem estática
-- **Tailwind CSS** – Framework utilitário para estilização rápida e responsiva
+- **React com TypeScript**  
+  Utilizamos o React para dividir o site em componentes reutilizáveis, facilitando a organização e manutenção do código. O TypeScript foi integrado ao projeto para aumentar a segurança durante o desenvolvimento, ajudando a evitar erros comuns com sua tipagem estática.
 
-> Utilizamos o Tailwind pela sua praticidade e agilidade durante o desenvolvimento, já que permite aplicar estilos diretamente nas classes das divs (ex: `className="text-center text-black"`), além de facilitar a criação de layouts responsivos.
+- **Tailwind CSS**  
+  O Tailwind foi escolhido para agilizar a estilização da interface. Ele permite aplicar estilos diretamente nas classes HTML, o que torna o desenvolvimento mais rápido e o layout automaticamente responsivo, sem a necessidade de escrever CSS tradicional.
 
+- **Anime.js**  
+  Para dar mais vida ao site, usamos o Anime.js, uma biblioteca leve de animações. Com ela, criamos efeitos visuais suaves e interativos em textos, imagens e outros elementos da página, melhorando a experiência do usuário.
 
 ---
+
 
 
 ## 🎨 Protótipo
