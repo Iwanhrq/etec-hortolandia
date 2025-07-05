@@ -37,7 +37,13 @@ const Header = () => {
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <span className="font-bold text-xl tracking-wide">ETEC DE HORTOLÂNDIA</span>
+          <button
+            className="font-bold text-xl tracking-wide bg-transparent border-none p-0 m-0 cursor-pointer hover:text-gray-700 transition"
+            onClick={() => scrollToSection('top')}
+            aria-label="Voltar ao início"
+          >
+            ETEC DE HORTOLÂNDIA
+          </button>
         </div>
         {/* Menu desktop */}
         <ul className="hidden md:flex gap-8 text-lg items-center">

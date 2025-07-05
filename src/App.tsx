@@ -155,21 +155,7 @@ function App() {
       <section id="adm" className="section-anim relative bg-[#010512] text-white py-8 px-2 overflow-hidden flex flex-col items-center justify-center min-h-[100vh]">
         <h2 ref={admTextRef} className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-light text-center mb-12">ADMINISTRAÇÃO</h2>
         <div ref={admGridRef} className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-12">
-          <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem] md:order-1">
-            <img
-              ref={admImg1Ref}
-              src={adm1img}
-              alt="ADM 1"
-              className="hidden md:block w-60 h-72 md:w-80 md:h-[30rem] object-cover shadow-lg absolute left-1/2 top-0 transform -translate-x-1/2 z-10 md:left-0 md:top-0 md:translate-x-0 md:z-10 img-anim"
-            />
-            <img
-              ref={admImg2Ref}
-              src={adm2Img}
-              alt="ADM 2"
-              className="w-72 h-100 md:w-80 md:h-[30rem] object-cover shadow-lg mx-auto block md:absolute md:left-56 md:top-20 md:translate-x-0 md:z-10 img-anim"
-            />
-          </div>
-          <div className="flex flex-col w-full md:w-1/2 gap-8 items-center md:items-start md:order-2">
+          <div className="flex flex-col w-full md:w-1/2 gap-8 items-center md:items-start md:order-1">
             <div>
               <p ref={admPRef} className="text-lg md:text-xl text-white/80 text-center md:text-left">
                 O curso de Administração oferece uma formação sólida para quem deseja atuar no mundo dos negócios, liderar projetos e entender como funciona o dia a dia das empresas. É uma base essencial para futuros empreendedores e gestores.
@@ -186,6 +172,20 @@ function App() {
                 <li className="md:text-lg">Empreendedorismo e inovação nos negócios</li>
               </ul>
             </div>
+          </div>
+          <div className="relative w-full md:w-1/2 justify-center mb-8 md:mb-0 min-h-[20rem] md:min-h-[32rem] md:order-2">
+            <img
+              ref={admImg1Ref}
+              src={adm1img}
+              alt="ADM 1"
+              className="hidden md:block w-60 h-72 md:w-80 md:h-[30rem] object-cover shadow-lg absolute left-1/2 top-0 transform -translate-x-1/2 z-10 md:left-0 md:top-0 md:translate-x-0 md:z-10 img-anim"
+            />
+            <img
+              ref={admImg2Ref}
+              src={adm2Img}
+              alt="ADM 2"
+              className="w-72 h-100 md:w-80 md:h-[30rem] object-cover shadow-lg mx-auto block md:absolute md:left-56 md:top-20 md:translate-x-0 md:z-10 img-anim"
+            />
           </div>
         </div>
       </section>
