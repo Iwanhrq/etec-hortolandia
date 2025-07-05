@@ -136,7 +136,7 @@ function App() {
               </p>
             </div>
             <div>
-              <h3 ref={dsH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender</h3>
+              <h3 ref={dsH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender:</h3>
               <ul ref={dsUlRef} className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
                 <li className="md:text-lg">Lógica de programação e algoritmos</li>
                 <li className="md:text-lg">Linguagens como HTML, CSS, JavaScript e C#</li>
@@ -144,6 +144,7 @@ function App() {
                 <li className="md:text-lg">Front-end e back-end na prática</li>
                 <li className="md:text-lg">Banco de dados</li>
                 <li className="md:text-lg">Projetos práticos inspirados no mercado de trabalho</li>
+                <li className="md:text-lg">Automação com Arduino e sensores eletrônicos</li>
               </ul>
             </div>
           </div>
@@ -175,7 +176,7 @@ function App() {
               </p>
             </div>
             <div>
-              <h3 ref={admH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender</h3>
+              <h3 ref={admH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender:</h3>
               <ul ref={admUlRef} className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
                 <li className="md:text-lg">Fundamentos da gestão e organização empresarial</li>
                 <li className="md:text-lg">Planejamento estratégico e processos administrativos</li>
@@ -215,7 +216,7 @@ function App() {
               </p>
             </div>
             <div>
-              <h3 ref={nutriH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender</h3>
+              <h3 ref={nutriH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender:</h3>
               <ul ref={nutriUlRef} className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
                 <li className="md:text-lg">Fundamentos da nutrição e alimentação saudável</li>
                 <li className="md:text-lg">Técnicas de preparo e conservação de alimentos</li>
