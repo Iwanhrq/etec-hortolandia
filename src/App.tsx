@@ -136,7 +136,7 @@ function App() {
               </p>
             </div>
             <div>
-              <h3 ref={dsH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender:</h3>
+              <h3 ref={dsH3Ref} className="text-2xl md:text-3xl font-normal mb-2 text-white text-center md:text-left">O que você vai aprender: </h3>
               <ul ref={dsUlRef} className="list-disc list-inside text-sm md:text-base text-white/50 pl-4 md:text-left">
                 <li className="md:text-lg">Lógica de programação e algoritmos</li>
                 <li className="md:text-lg">Linguagens como HTML, CSS, JavaScript e C#</li>
