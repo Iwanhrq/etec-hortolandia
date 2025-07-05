@@ -2,7 +2,9 @@
 
 Este projeto é um site desenvolvido com o objetivo de apresentar informações sobre a ETEC de Hortolândia, incluindo os cursos oferecidos e outros detalhes relevantes sobre a instituição. A proposta é criar uma plataforma clara, acessível e responsiva, que permita aos visitantes conhecerem melhor a escola.
 
+
 ---
+
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -12,7 +14,9 @@ Este projeto é um site desenvolvido com o objetivo de apresentar informações 
 
 > Utilizamos o Tailwind pela sua praticidade e agilidade durante o desenvolvimento, já que permite aplicar estilos diretamente nas classes das divs (ex: `className="text-center text-black"`), além de facilitar a criação de layouts responsivos.
 
+
 ---
+
 
 ## 🎨 Protótipo
 
@@ -20,7 +24,9 @@ O design do site foi planejado no Figma. Você pode visualizar o protótipo comp
 
 👉 [Acessar protótipo no Figma]([https://www.figma.com/SEU-LINK-AQUI](https://www.figma.com/design/EorT8ZsYRc28ZdQKG708EG/ETEC-de-Hortol%C3%A2ndia---Website?node-id=0-1&t=FRJ8A7Sxa0cvD4jH-1))
 
+
 ---
+
 
 ## 📁 Como rodar o projeto
 
