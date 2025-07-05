@@ -22,7 +22,7 @@ Este projeto é um site desenvolvido com o objetivo de apresentar informações 
 
 O design do site foi planejado no Figma. Você pode visualizar o protótipo completo clicando no link abaixo:
 
-👉 [Acessar protótipo no Figma]([https://www.figma.com/SEU-LINK-AQUI](https://www.figma.com/design/EorT8ZsYRc28ZdQKG708EG/ETEC-de-Hortol%C3%A2ndia---Website?node-id=0-1&t=FRJ8A7Sxa0cvD4jH-1))
+👉 [Acessar protótipo no Figma](https://www.figma.com/SEU-LINK-AQUI](https://www.figma.com/design/EorT8ZsYRc28ZdQKG708EG/ETEC-de-Hortol%C3%A2ndia---Website?node-id=0-1&t=FRJ8A7Sxa0cvD4jH-1))
 
 
 ---
