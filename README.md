@@ -47,5 +47,3 @@ O design do site foi planejado no Figma. Você pode visualizar o protótipo comp
 4. Incie o servidor de desenvolvimento
    ```bash
    npm run dev
-
-
