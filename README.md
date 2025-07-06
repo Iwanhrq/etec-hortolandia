@@ -30,20 +30,32 @@ O design do site foi planejado no Figma. Você pode visualizar o protótipo comp
 ---
 
 
-## 📁 Como rodar o projeto
+-----
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/Iwanhrq/etec-hortolandia.git
+## 📁 Como Rodar o Projeto
 
-2. Acesse a pasta do projeto
-   ```bash
-   cd etec-hortolandia
+Para configurar e executar este projeto localmente, siga os passos abaixo:
 
-3. Instale as dependências
-   ```bash
-   npm install
+1.  **Clone o repositório:**
 
-4. Incie o servidor de desenvolvimento
-   ```bash
-   npm run dev
+    ```bash
+    git clone https://github.com/Iwanhrq/etec-hortolandia.git
+    ```
+
+2.  **Acesse a pasta do projeto:**
+
+    ```bash
+    cd etec-hortolandia
+    ```
+
+3.  **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o servidor de desenvolvimento:**
+
+    ```bash
+    npm run dev
+    ```
