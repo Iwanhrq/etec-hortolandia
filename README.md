@@ -34,4 +34,18 @@ O design do site foi planejado no Figma. Você pode visualizar o protótipo comp
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/Iwanhrq/etec-hortolandia.git
+
+2. Acesse a pasta do projeto
+   ```bash
+   cd etec-hortolandia
+
+3. Instale as dependências
+   ```bash
+   npm install
+
+4. Incie o servidor de desenvolvimento
+   ```bash
+   npm run dev
+
+
