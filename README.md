@@ -3,7 +3,7 @@
 Este projeto é um site desenvolvido com o objetivo de apresentar informações sobre a ETEC de Hortolândia, incluindo os cursos oferecidos e outros detalhes relevantes sobre a instituição. A proposta é criar uma plataforma clara, acessível e responsiva, que permita aos visitantes conhecerem melhor a escola.
 
 <p align="center">
-  <img width="1200" height="727" alt="etec" src="https://github.com/user-attachments/assets/909b48fe-3101-4676-9297-55ae6fd08d86" />
+  <img width="1200" height="714" alt="etec" src="https://github.com/user-attachments/assets/cbc08b4b-8499-4a5c-9611-6e7e06fac547" />
 </p>
 
 ---
