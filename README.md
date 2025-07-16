@@ -2,10 +2,14 @@
 
 Este projeto é um site desenvolvido com o objetivo de apresentar informações sobre a ETEC de Hortolândia, incluindo os cursos oferecidos e outros detalhes relevantes sobre a instituição. A proposta é criar uma plataforma clara, acessível e responsiva, que permita aos visitantes conhecerem melhor a escola.
 
+<p align="center">
+  <img width="1200" height="727" alt="etec" src="https://github.com/user-attachments/assets/909b48fe-3101-4676-9297-55ae6fd08d86" />
+</p>
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
+
 
 - **React com TypeScript**  
   Utilizamos o React para dividir o site em componentes reutilizáveis, facilitando a organização e manutenção do código. O TypeScript foi integrado ao projeto para aumentar a segurança durante o desenvolvimento, ajudando a evitar erros comuns com sua tipagem estática.
